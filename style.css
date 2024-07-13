@@ -3,3 +3,40 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-image: url(image.webp);
+    height: 100vh;
+    /* width: 50%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: beige;
+    width: 65%;
+    /* height: 70%; */
+    padding: 30px;
+    border-radius: 20px;
+}
+.container .title{
+    margin-bottom: 5px;
+    text-align: center;
+}
+.content-container .question{
+    cursor: pointer;
+    font-size: 18px;
+    border-bottom: 1px solid black;
+    padding: 10px 0px;
+    position: relative;
+} 
+.content-container .question::after{
+    content:'+';
+    right: 5px;
+    position: absolute;
+}
+.content-container .answer{
+    margin-top: 10px;
+    font-size: 15px;
+    
+}
