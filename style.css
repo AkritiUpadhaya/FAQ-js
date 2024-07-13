@@ -38,5 +38,18 @@ body{
 .content-container .answer{
     margin-top: 10px;
     font-size: 15px;
+    display: none;
+    transition: .4s;
     
+}
+.content-container.active .question{
+    font-size: 15px;
+    transition: .4s;
+}
+.content-container.active .question::after{
+    content: '-';
+    transition: .4s;
+}
+.content-container.active .answer{
+display: block
 }
